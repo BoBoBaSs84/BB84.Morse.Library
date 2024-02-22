@@ -1,0 +1,79 @@
+<Project>
+
+	<PropertyGroup>
+		<VersionMajor>1</VersionMajor>
+		<VersionMinor>0</VersionMinor>
+		<VersionPatch>0</VersionPatch>
+		<VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionPatch)</VersionPrefix>
+		<VersionSuffix Condition="$(Configuration.Equals('Debug'))">Development</VersionSuffix>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+		<AnalysisLevel>latest</AnalysisLevel>
+		<AnalysisMode>recommended</AnalysisMode>
+		<AppendTargetFrameworkToOutputPath>true</AppendTargetFrameworkToOutputPath>
+		<AssemblyOriginatorKeyFile>..\..\PublicKey.snk</AssemblyOriginatorKeyFile>
+		<CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
+		<DebugType>full</DebugType>
+		<Deterministic>true</Deterministic>
+		<EnableNETAnalyzers>true</EnableNETAnalyzers>
+		<EnablePackageValidation>true</EnablePackageValidation>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+		<GeneratedAssemblyInfoFile>Properties\AssemblyInfo.cs</GeneratedAssemblyInfoFile>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<LangVersion>latest</LangVersion>
+		<Nullable>enable</Nullable>
+		<SignAssembly>true</SignAssembly>
+		<TargetFrameworks>netstandard2.0;netstandard2.1;net462;net472;net48;net481;net6.0;net8.0</TargetFrameworks>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)'=='Release'">
+		<DebugType>none</DebugType>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
+		<Author>BoBoBaSs84</Author>
+		<Authors>$(Author)</Authors>
+		<Company>https://github.com/$(Author)</Company>
+		<Copyright>Copyright © $([System.DateTime]::UtcNow.Year) $(Author)</Copyright>
+		<Description>Morse code is a method used in telecommunication to encode text characters as standardized sequences of two different signal durations, called dots and dashes, or dits and dahs.</Description>
+		<PackageId>$(AssemblyName)</PackageId>
+		<PackageTags>library;csharp;morse;code</PackageTags>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/$(Author)/$(Product)</PackageProjectUrl>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+		<Product>BB84.Morse.Library</Product>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/$(Author)/$(Product)</RepositoryUrl>
+		<NeutralLanguage>en-US</NeutralLanguage>
+		<Title>$(AssemblyName)</Title>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
+		<IsPackable>false</IsPackable>
+		<IsTestProject>true</IsTestProject>
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+		<TargetFrameworks>net462;net472;net48;net481;net6.0;net8.0</TargetFrameworks>
+	</PropertyGroup>
+
+	<ItemGroup Condition="!$(MSBuildProjectName.EndsWith('Tests'))">
+		<InternalsVisibleTo Include="$(AssemblyName)Tests" Key="0024000004800000940000000602000000240000525341310004000001000100b12c62b16117c46a849b94a61444ac328a9de4b8f48d7541127d4867f89778b39cf2e70375e68677b190f02030f3578010c909708b8443c7c5772b2fd43a7a4d5909944d918e3598ac6e158e5bef718d78388e92c147733845ffffaaa75a48939dccd21e7f7ea439006bcc85f62b02f402c9d431c363e004c834e8e9283846b0" />
+		<None Include="..\..\LICENSE" Pack="True" PackagePath="\" />
+		<None Include="..\..\README.md" Pack="True" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup Condition="$(MSBuildProjectName.EndsWith('Tests'))">
+		<Using Include="Microsoft.VisualStudio.TestTools.UnitTesting" />
+		<Using Include="System.Diagnostics" />
+		<Using Include="System.Diagnostics.CodeAnalysis" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Folder Include="Properties\" />
+	</ItemGroup>
+
+</Project>

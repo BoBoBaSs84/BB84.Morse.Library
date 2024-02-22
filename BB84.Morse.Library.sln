@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{655CCF8E-F71D-412B-8A8D-703198436A57}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitignore = .gitignore
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		Directory.Packages.props = Directory.Packages.props
+		global.json = global.json
+		LICENSE = LICENSE
+		PublicKey.snk = PublicKey.snk
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7038793F-C02F-4E0D-812C-09BB9F028835}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{CC308945-8E96-4AEC-B88F-17FAB272778D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.Morse.Library", "src\BB84.Morse.Library\BB84.Morse.Library.csproj", "{982CBE36-80F8-47A7-A832-AF825A7C1D08}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BB84.Morse.LibraryTests", "tests\BB84.Morse.LibraryTests\BB84.Morse.LibraryTests.csproj", "{81575037-03D5-4F34-9D24-5641D8188F3D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Debug|x64.ActiveCfg = Debug|x64
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Debug|x64.Build.0 = Debug|x64
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Debug|x86.ActiveCfg = Debug|x86
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Debug|x86.Build.0 = Debug|x86
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Release|ARM64.Build.0 = Release|Any CPU
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Release|x64.ActiveCfg = Release|x64
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Release|x64.Build.0 = Release|x64
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Release|x86.ActiveCfg = Release|x86
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08}.Release|x86.Build.0 = Release|x86
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Debug|ARM64.Build.0 = Debug|ARM64
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Debug|x64.ActiveCfg = Debug|x64
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Debug|x64.Build.0 = Debug|x64
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Debug|x86.ActiveCfg = Debug|x86
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Debug|x86.Build.0 = Debug|x86
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Release|ARM64.ActiveCfg = Release|ARM64
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Release|ARM64.Build.0 = Release|ARM64
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Release|x64.ActiveCfg = Release|x64
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Release|x64.Build.0 = Release|x64
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Release|x86.ActiveCfg = Release|x86
+		{81575037-03D5-4F34-9D24-5641D8188F3D}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{982CBE36-80F8-47A7-A832-AF825A7C1D08} = {7038793F-C02F-4E0D-812C-09BB9F028835}
+		{81575037-03D5-4F34-9D24-5641D8188F3D} = {CC308945-8E96-4AEC-B88F-17FAB272778D}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E5287276-A437-4C0C-8F2C-236122BF5586}
+	EndGlobalSection
+EndGlobal
